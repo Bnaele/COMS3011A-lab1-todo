@@ -8,6 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "postinstall": "prisma generate",
     "pretest": "DATABASE_URL=\"file:$PWD/prisma/test.db\" npx prisma db push --skip-generate",
     "test": "DB_FILE_NAME=test.db vitest run"
   },
